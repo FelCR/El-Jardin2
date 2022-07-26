@@ -1,0 +1,351 @@
+#gridJardin {
+    display: grid;
+    grid-template-columns: 10% 70% 20%;
+    grid-template-rows: 600px 50px auto 30px;
+    column-gap: 0;
+    row-gap: 0;
+    grid-template-areas: 
+                        "encabezado encabezado encabezado"
+                        "nav nav nav"
+                        "contSeccion contSeccion contSeccion"
+                        "footer footer footer";
+}
+.textoBoton {
+    color: white;
+    font-size: 20px;
+}
+
+#posBoton {
+    margin-top: 50px;
+}
+
+.formularioTexto {
+    text-align: justify;
+}
+
+/*---------------------- ENCABEZADO DEL SITIO-------------------------*/
+#encabezado { 
+    grid-area: encabezado;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(flores.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+}
+
+.logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 100px;
+    color: white;
+    margin-top: 10%;
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(113, 3, 3);
+    color: white;
+}
+/*--------------------------BARRA DE NAVEGACIÓN--------------------------*/
+
+#barraNav{
+    grid-area: nav;
+}
+
+/*-------------------------CONTENIDO DE PAGINA---------------------------*/
+#botonWhats {
+    position: sticky;
+    top: 85%;
+    margin-left: 95%;
+}
+#contSeccion {
+    grid-area: contSeccion;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+    background-color: rgb(242, 242, 242);
+    text-align: center;
+    justify-content: space-evenly;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.parrafoIndex {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    color: rgb(69, 69, 69);
+}
+.tituloContenido {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: justify;
+}
+.textoIndex {
+    text-align: justify;
+}
+.imagenes {
+    height: auto;
+    width: auto;
+    padding-bottom: 20px;
+}
+.galeriaCarrusel {
+    /*background-color: grey;*/
+    height: auto;
+    width: 70%;
+    margin-left: 15%;
+    
+}
+.recuerdosInolvidables {
+    height: 400px;
+    width: 90%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(formulario.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-position: center;
+    margin-left: 5%;
+    text-align: center;
+}
+.recuerdos {
+    font-family: 'Great Vibes', cursive;
+    font-size: 100px;
+    color: white;
+    margin-top: 120px; 
+}
+
+.tituloServicios {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    color: rgb(69, 69, 69);
+    margin-top: 80px;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+/*-------------------------FOOTER DE PAGINA---------------------------*/
+
+footer {
+    grid-area: footer;
+    
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(113, 3, 3);
+    color: white;
+}
+/*------------------->> << PAGINA DE CONTACTO >> <<--------------------*/
+
+.seccionContacto {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    
+}
+
+.formatoFormulario {
+    background-color: rgb(242, 242, 242);
+    width: auto;
+    padding-top: 15px; padding-left: 15px; padding-bottom: 15px; padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formatoSalones {
+    background-color: rgb(242, 242, 242);
+    width: 95%;
+    padding-top: 15px; padding-left: 15px; padding-bottom: 15px; padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2.5%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.formatoServicios {
+    background-color: rgb(242, 242, 242);
+    width: 95%;
+    padding-top: 25px; padding-left: 15px; padding-right: 15px;
+    justify-content: space-evenly;
+    margin-left: 2.5%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.titServicios {
+    margin-left: 25px;
+}
+
+.infoSalones {
+    width: 600px;
+    margin-right: 10px;
+    text-align: justify;
+}
+
+#carruselSalones {
+    height: 370px;
+    width: 650px;
+}
+
+.fotosGaleria {
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+
+.imagenContacto {
+    height: 350px;
+    width: 55%;
+    border-radius: 15px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
+    background-position: center;
+    text-align: center;
+}
+
+.contactanos {
+    font-family: 'Great Vibes', cursive;
+    font-size: 100px;
+    color: white;
+    margin-top: 15%;
+
+}
+
+#encabezadoContacto { 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(wedding1.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    background-position: center;
+    
+    height: 350px;
+}
+
+.logoSecciones{
+        font-family: 'Great Vibes', cursive;
+        font-size: 70px;
+        color: white;
+        margin-top: 50px;
+        margin-left: 20px;
+}
+
+
+#seccionContacto {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+
+/*------------------->> RESPONSIVIDAD <<--------------------*/
+@media (max-width: 412px) {
+    #carruselIndex {
+        display: none;
+    }
+    
+}
+@media (max-width: 576px) {
+    .recuerdos {
+        font-family: 'Great Vibes', cursive;
+        font-size: 50px;
+        color: white;
+        margin-top: 80px; 
+    }
+
+    #carruselIndex {
+        display: none;
+    }
+}
+    
+@media (max-width: 768px) {
+    #gridJardin {
+        display: grid;
+        grid-template-columns: 15% 70% 15%;
+        grid-template-rows: 600px 50px auto auto 30px;
+        column-gap: 0;
+        row-gap: 0;
+        grid-template-areas: 
+        "encabezado encabezado encabezado"
+        "nav nav nav"
+        "contSeccion contSeccion contSeccion"
+        "footer footer footer";
+    }
+    .tituloContenido {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .recuerdos {
+        font-family: 'Great Vibes', cursive;
+        font-size: 70px;
+        color: white;
+        margin-top: 85px; 
+    }
+
+    
+
+    #carruselSalones {
+        display: none;
+    }
+
+}
+@media (max-width: 900px) {
+    .imagenContacto {
+        display: none;
+    }
+    
+    .contactanos {
+        display: none;
+    }
+
+}
+@media (max-width: 992px) {
+    .imagenContacto {
+        height: 350px;
+        width: 20%;
+        border-radius: 15px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
+        background-position: center;
+        text-align: center;
+    }
+    
+    .contactanos {
+        font-family: 'Great Vibes', cursive;
+        font-size: 70px;
+        color: white;
+        margin-top: 15%;
+    
+    }
+}
+@media (max-width: 1200px) {
+    .imagenContacto {
+        height: 350px;
+        width: 40%;
+        border-radius: 15px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
+        background-position: center;
+        text-align: center;
+    }
+    
+    .contactanos {
+        font-family: 'Great Vibes', cursive;
+        font-size: 80px;
+        color: white;
+        margin-top: 15%;
+    
+    }
+}
+@media (max-width: 1400px) {
+    
+}

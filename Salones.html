@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--DISEÑO DE PAGINA WEB ESTANDAR SIN GRIDS CON NAV DENTRO DE HEADER Y FLEX CON DISPLAY EN COLUMNAS EN EL CONTENIDO. HABILITADO CON BOOTSTRAP Y ANIMACIÓN DE CONTENIDO-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salones</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Smooch&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body>
+  <header id="encabezadoContacto">
+    <div class="titulo">
+      <div class="titSup">El Jardín eventos sociales</div>
+      <div class="telefono">Telefono: 55 6677 8899</div>
+    </div>
+    <div class="logoSecciones animate__animated animate__fadeIn"><text>El Jardín</text></div>
+
+  </header>
+  <div id="barraNav">
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Salones.html">Salones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Galeria.html">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Servicios
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="Servicios.html">Alimentos y bebidas</a></li>
+              <li><a class="dropdown-item" href="Servicios.html">Ambientación</a></li>
+              <li><a class="dropdown-item" href="Servicios.html">Música y animación</a></li>
+              <li><a class="dropdown-item" href="Servicios.html">Postres</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+</div>
+  <section>
+    <div id="botonWhats"><a href="https://wa.me/525534190675"><img src="imagen/whats.png" height="60" width="60"></a></div>
+    <div class="seccionContacto"> <!--CONTENEDOR PADRE-->
+      <div class="contenido"> <!--CONTENEDOR HIJO-->
+        <div class="parrafoIndex">
+        <h2 class="tituloContenido">Salones</h2>
+          <p class="textoIndex">Lorem ipsum dolor sit amet. Qui aspernatur nihil 33 officiis voluptates et fugit itaque et facilis Quis ad laudantium quos aut nihil autem aut doloremque 
+            consequatur. Hic facilis quia vel fugit sapiente non incidunt consequatur quo voluptatem omnis sit rerum enim eos laborum dicta. At enim atque sit totam 
+            natus eos facere quae est fuga autem et minus nostrum vel molestiae natus! Velit labore rem inventore itaque ea debitis quod qui autem molestiae ut 
+            consectetur ipsam id galisum quis.</p>
+        </div>
+      </div>
+      
+          <div class="formatoSalones">
+          <div class="infoSalones">
+            <div class="card">
+                <h5 class="card-header">El Jardín</h5>
+                <div class="card-body">
+                  
+                  <p class="card-text">Lorem ipsum dolor sit amet. Qui aspernatur nihil 33 officiis voluptates et fugit itaque et facilis Quis ad laudantium quos aut nihil autem aut doloremque consequatur.</p>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">Características</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Tamaño</th>
+                        <td> 250 metros cuadrados (10 x 25)</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Capacidad</th>
+                        <td>De 10 hasta 80 personas</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Ubicación</th>
+                        <td colspan="2">Rancho Mozota 51, Haciendas de Coyoacán. 
+                            <!-- Button trigger modal -->
+<a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Ver mapa
+</a>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Ubicación</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.4902014786794!2d-99.11529098582754!3d19.304523649767592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce019aa610db67%3A0x8eaeb6ddaa681813!2sRancho%20Mozota%2051%2C%20Coapa%2C%20Hacienda%20de%20Coyoac%C3%A1n%2C%20Coyoac%C3%A1n%2C%2004970%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1658683615487!5m2!1ses-419!2smx" width="470" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Reservar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <a href="#" class="btn btn-primary">Reservar</a>
+                </div>
+              </div>
+            </div>
+            
+          <div id="carruselSalones">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Jardin 1.jpeg" height="370" width="650">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Jardin 2.jpeg" height="370" width="650">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Jardin 3.jpeg" height="370" width="650">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+          </div>
+          
+          </div>
+
+          <div class="formatoSalones">
+            <div class="infoSalones">
+              <div class="card">
+                  <h5 class="card-header">Salon Mirage</h5>
+                  <div class="card-body">
+                    
+                    <p class="card-text">Lorem ipsum dolor sit amet. Qui aspernatur nihil 33 officiis voluptates et fugit itaque et facilis Quis ad laudantium quos aut nihil autem aut doloremque consequatur.</p>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col"></th>
+                          <th scope="col">Características</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">Tamaño</th>
+                          <td> 250 metros cuadrados (10 x 25)</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Capacidad</th>
+                          <td>De 10 hasta 80 personas</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">Ubicación</th>
+                          <td colspan="2">Rancho Mozota 51, Haciendas de Coyoacán. 
+                              <!-- Button trigger modal -->
+  <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+      Ver mapa
+  </a>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">Salon Mirage</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.097065735442!2d-99.11833928582789!3d19.27814465059854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce016ef677833f%3A0xe60e5616ab2e49a!2sCanal%20Amelaco%2C%20Barrio%2018%2C%2016034%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1658688396858!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Reservar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                    <a href="#" class="btn btn-primary">Reservar</a>
+                  </div>
+                </div>
+              </div>
+              
+            <div id="carruselSalones">
+              
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="Jardin 1.jpeg" height="370" width="650">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="Jardin 2.jpeg" height="370" width="650">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="Jardin 3.jpeg" height="370" width="650">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+            </div>
+            
+            </div>
+
+            <div class="formatoSalones">
+                <div class="infoSalones">
+                  <div class="card">
+                      <h5 class="card-header">Salon Del Sol</h5>
+                      <div class="card-body">
+                        
+                        <p class="card-text">Lorem ipsum dolor sit amet. Qui aspernatur nihil 33 officiis voluptates et fugit itaque et facilis Quis ad laudantium quos aut nihil autem aut doloremque consequatur.</p>
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th scope="col"></th>
+                              <th scope="col">Características</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">Tamaño</th>
+                              <td> 250 metros cuadrados (10 x 25)</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Capacidad</th>
+                              <td>De 10 hasta 80 personas</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">Ubicación</th>
+                              <td colspan="2">Rancho Mozota 51, Haciendas de Coyoacán. 
+                                  <!-- Button trigger modal -->
+      <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Ver mapa
+      </a>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">Salon Del Sol</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.4902014786794!2d-99.11529098582754!3d19.304523649767592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce019aa610db67%3A0x8eaeb6ddaa681813!2sRancho%20Mozota%2051%2C%20Coapa%2C%20Hacienda%20de%20Coyoac%C3%A1n%2C%20Coyoac%C3%A1n%2C%2004970%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1658683615487!5m2!1ses-419!2smx" width="470" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Reservar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <a href="#" class="btn btn-primary">Reservar</a>
+                      </div>
+                    </div>
+                  </div>
+                  
+                <div id="carruselSalones">
+                  
+                  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Jardin 1.jpeg" height="370" width="650">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Jardin 2.jpeg" height="370" width="650">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Jardin 3.jpeg" height="370" width="650">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                </div>
+                
+                </div>
+
+                <div class="formatoSalones">
+                    <div class="infoSalones">
+                      <div class="card">
+                          <h5 class="card-header">Salon Luna</h5>
+                          <div class="card-body">
+                            
+                            <p class="card-text">Lorem ipsum dolor sit amet. Qui aspernatur nihil 33 officiis voluptates et fugit itaque et facilis Quis ad laudantium quos aut nihil autem aut doloremque consequatur.</p>
+                            <table class="table">
+                              <thead>
+                                <tr>
+                                  <th scope="col"></th>
+                                  <th scope="col">Características</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th scope="row">Tamaño</th>
+                                  <td> 250 metros cuadrados (10 x 25)</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Capacidad</th>
+                                  <td>De 10 hasta 80 personas</td>
+                                </tr>
+                                <tr>
+                                  <th scope="row">Ubicación</th>
+                                  <td colspan="2">Rancho Mozota 51, Haciendas de Coyoacán. 
+                                      <!-- Button trigger modal -->
+          <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Ver mapa
+          </a>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Salon Luna</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.4902014786794!2d-99.11529098582754!3d19.304523649767592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce019aa610db67%3A0x8eaeb6ddaa681813!2sRancho%20Mozota%2051%2C%20Coapa%2C%20Hacienda%20de%20Coyoac%C3%A1n%2C%20Coyoac%C3%A1n%2C%2004970%20Ciudad%20de%20M%C3%A9xico%2C%20CDMX!5e0!3m2!1ses-419!2smx!4v1658683615487!5m2!1ses-419!2smx" width="470" height="420" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button type="button" class="btn btn-primary">Reservar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <a href="#" class="btn btn-primary">Reservar</a>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    <div id="carruselSalones">
+                      
+                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                          <div class="carousel-inner">
+                            <div class="carousel-item active">
+                              <img src="Jardin 1.jpeg" height="370" width="650">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Jardin 2.jpeg" height="370" width="650">
+                            </div>
+                            <div class="carousel-item">
+                              <img src="Jardin 3.jpeg" height="370" width="650">
+                            </div>
+                          </div>
+                          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
+                        </div>
+                    </div>
+                    </div>
+                    
+      
+    </div>
+  </section>
+  <footer>
+    <div>TELEFONOS</div>
+    <div>REDES SOCIALES</div>
+    <div>DIRECCIÓN</div>
+  </footer>
+</body>
+</html>

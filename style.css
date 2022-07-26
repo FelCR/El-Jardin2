@@ -1,0 +1,410 @@
+@charset "UTF-8";
+#gridJardin {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 10% 70% 20%;
+      grid-template-columns: 10% 70% 20%;
+  -ms-grid-rows: 600px 50px auto 30px;
+      grid-template-rows: 600px 50px auto 30px;
+  -webkit-column-gap: 0;
+          column-gap: 0;
+  row-gap: 0;
+      grid-template-areas: "encabezado encabezado encabezado" "nav nav nav" "contSeccion contSeccion contSeccion" "footer footer footer";
+}
+
+.textoBoton {
+  color: white;
+  font-size: 20px;
+}
+
+#posBoton {
+  margin-top: 50px;
+}
+
+.formularioTexto {
+  text-align: justify;
+}
+
+/*---------------------- ENCABEZADO DEL SITIO-------------------------*/
+#encabezado {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: encabezado;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.278))), url(flores.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(flores.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+}
+
+.logo {
+  font-family: 'Great Vibes', cursive;
+  font-size: 100px;
+  color: white;
+  margin-top: 10%;
+}
+
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #710303;
+  color: white;
+}
+
+/*--------------------------BARRA DE NAVEGACIÓN--------------------------*/
+#barraNav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: nav;
+}
+
+/*-------------------------CONTENIDO DE PAGINA---------------------------*/
+#botonWhats {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 85%;
+  margin-left: 95%;
+}
+
+#contSeccion {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: contSeccion;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: auto;
+  background-color: #f2f2f2;
+  text-align: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.parrafoIndex {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 5px;
+  margin-bottom: 50px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  color: #454545;
+}
+
+.tituloContenido {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  text-align: justify;
+}
+
+.textoIndex {
+  text-align: justify;
+}
+
+.imagenes {
+  height: auto;
+  width: auto;
+  padding-bottom: 20px;
+}
+
+.galeriaCarrusel {
+  /*background-color: grey;*/
+  height: auto;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.recuerdosInolvidables {
+  height: 400px;
+  width: 90%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.278))), url(formulario.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(formulario.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  background-position: center;
+  margin-left: 5%;
+  text-align: center;
+}
+
+.recuerdos {
+  font-family: 'Great Vibes', cursive;
+  font-size: 100px;
+  color: white;
+  margin-top: 120px;
+}
+
+.tituloServicios {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  color: #454545;
+  margin-top: 80px;
+}
+
+.tarjetas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+/*-------------------------FOOTER DE PAGINA---------------------------*/
+footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #710303;
+  color: white;
+}
+
+/*------------------->> << PAGINA DE CONTACTO >> <<--------------------*/
+.seccionContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+.formatoFormulario {
+  background-color: #f2f2f2;
+  width: auto;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formatoSalones {
+  background-color: #f2f2f2;
+  width: 95%;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 2.5%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.formatoServicios {
+  background-color: #f2f2f2;
+  width: 95%;
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: 2.5%;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.titServicios {
+  margin-left: 25px;
+}
+
+.infoSalones {
+  width: 600px;
+  margin-right: 10px;
+  text-align: justify;
+}
+
+#carruselSalones {
+  height: 370px;
+  width: 650px;
+}
+
+.fotosGaleria {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.imagenContacto {
+  height: 350px;
+  width: 55%;
+  border-radius: 15px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.134))), url(wedding1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
+  background-position: center;
+  text-align: center;
+}
+
+.contactanos {
+  font-family: 'Great Vibes', cursive;
+  font-size: 100px;
+  color: white;
+  margin-top: 15%;
+}
+
+#encabezadoContacto {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.278))), url(wedding1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(wedding1.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  background-position: center;
+  height: 350px;
+}
+
+.logoSecciones {
+  font-family: 'Great Vibes', cursive;
+  font-size: 70px;
+  color: white;
+  margin-top: 50px;
+  margin-left: 20px;
+}
+
+#seccionContacto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+/*------------------->> RESPONSIVIDAD <<--------------------*/
+@media (max-width: 412px) {
+  #carruselIndex {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .recuerdos {
+    font-family: 'Great Vibes', cursive;
+    font-size: 50px;
+    color: white;
+    margin-top: 80px;
+  }
+  #carruselIndex {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #gridJardin {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 15% 70% 15%;
+        grid-template-columns: 15% 70% 15%;
+    -ms-grid-rows: 600px 50px auto auto 30px;
+        grid-template-rows: 600px 50px auto auto 30px;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+    row-gap: 0;
+        grid-template-areas: "encabezado encabezado encabezado" "nav nav nav" "contSeccion contSeccion contSeccion" "footer footer footer";
+  }
+  .tituloContenido {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 40px;
+    text-align: center;
+  }
+  .recuerdos {
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    color: white;
+    margin-top: 85px;
+  }
+  #carruselSalones {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .imagenContacto {
+    display: none;
+  }
+  .contactanos {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .imagenContacto {
+    height: 350px;
+    width: 20%;
+    border-radius: 15px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.134))), url(wedding1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
+    background-position: center;
+    text-align: center;
+  }
+  .contactanos {
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    color: white;
+    margin-top: 15%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .imagenContacto {
+    height: 350px;
+    width: 40%;
+    border-radius: 15px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.134))), url(wedding1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
+    background-position: center;
+    text-align: center;
+  }
+  .contactanos {
+    font-family: 'Great Vibes', cursive;
+    font-size: 80px;
+    color: white;
+    margin-top: 15%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

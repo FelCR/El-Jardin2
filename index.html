@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--DISEÑO DE PAGINA WEB ESTANDAR POR GRID DE 4X3 CON FLEX CON DISPLAY EN COLUMNAS EN EL CONTENIDO. HABILITADO CON BOOTSTRAP Y ANIMACIÓN DE CONTENIDO-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Jardín</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&family=Smooch&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body id="gridJardin">
+  <!--ENCABEZADO DEL SITIO-->
+  <header id="encabezado">
+    <div class="titulo">
+      <div class="titSup">El Jardín eventos sociales</div>
+      <div class="telefono">Telefono: 55 6677 8899</div>
+    </div>
+  
+    <div class="logo animate__animated animate__fadeIn"><text>El Jardín</text></div>
+    <div id="posBoton"><!-- Button trigger modal -->
+      <button class="btn btn-warning" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Reserva tu Evento
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Reservación</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <form class="formularioTexto">
+                <div>Nombre:  <input type="text" name="nombre" size="20" placeholder="Nombre"><br><br> Apellidos: <input type="text" name="apellidos" size="20" placeholder="Apellido"></div>
+                <br>
+                <div>Invitados:
+                  <input type="radio" name="hm" value="h" required> 10-20 / 
+                  <input type="radio" name="hm" value="m" required> 20-50  /
+                  <input type="radio" name="hm" value="m" required> 50 +
+                </div><br>
+                <div>
+                  <p>Fecha del evento:</p><input type="date" name="fecha"><br><br>
+                </div>
+                <div><textarea name="texto" rows="3" cols="50" placeholder="Cuentanos de tu evento"></textarea></div>
+                
+            </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+              <button type="button" class="btn btn-primary">Reservar</button>
+            </div>
+          </div>
+        </div>
+      </div></div>
+  </header>
+  <!--BARRA DE NAVEGACION-->
+  <div id="barraNav">
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Inicio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="Salones.html">Salones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Galeria.html">Galería</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contacto.html">Contacto</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Servicios
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="Servicios.html">Alimentos y bebidas</a></li>
+              <li><a class="dropdown-item" href="Servicios.html">Ambientación</a></li>
+              <li><a class="dropdown-item" href="Servicios.html">Música y animación</a></li>
+              <li><a class="dropdown-item" href="Servicios.html">Postres</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+</nav>
+</div>
+  <!--CUERPO DE PAGINA-->
+  <section id="contSeccion"> <!--CONTENEDOR PRINCIPAL-->
+    <div id="botonWhats"><a href="https://wa.me/525534190675"><img src="imagen/whats.png" height="60" width="60"></a></div>
+      <div class="contenido"> <!--CONTENIDO 1-->
+        <div class="parrafoIndex">
+        <h2 class="tituloContenido">¡Bienvenido!</h2>
+        <div>
+          <p class="textoIndex">Lorem ipsum dolor sit amet. Qui aspernatur nihil 33 officiis voluptates et fugit itaque et facilis Quis ad laudantium quos aut nihil autem aut doloremque 
+            consequatur. Hic facilis quia vel fugit sapiente non incidunt consequatur quo voluptatem omnis sit rerum enim eos laborum dicta. At enim atque sit totam 
+            natus eos facere quae est fuga autem et minus nostrum vel molestiae natus! Velit labore rem inventore itaque ea debitis quod qui autem molestiae ut 
+            consectetur ipsam id galisum quis.</p>
+        </div>
+        </div>
+      </div>
+
+      <div class="imagenes"> <!--CONTENIDO 2-->
+        <div class="galeriaCarrusel">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="boda.jpg" class="d-block w-100" alt="boda">
+              </div>
+              <div class="carousel-item">
+                <img src="banquete.jpg" class="d-block w-100" alt="banquete">
+              </div>
+              <div class="carousel-item">
+                <img src="bautizo.jpg" class="d-block w-100" alt="bautizo">
+              </div>
+              <div class="carousel-item">
+                <img src="galletas.jpg" class="d-block w-100" alt="postres">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="contenido"> <!--CONTENIDO 3-->
+        <div class="parrafoIndex">
+        <h2 class="tituloContenido">Tu evento en El Jardín</h2>
+        <div>
+          <p class="textoIndex">Lorem ipsum dolor sit amet. Qui aspernatur nihil 33 officiis voluptates et fugit itaque et facilis Quis ad laudantium quos aut nihil autem aut doloremque 
+            consequatur. Hic facilis quia vel fugit sapiente non incidunt consequatur quo voluptatem omnis sit rerum enim eos laborum dicta. At enim atque sit totam 
+            natus eos facere quae est fuga autem et minus nostrum vel molestiae natus! Velit labore rem inventore itaque ea debitis quod qui autem molestiae ut 
+            consectetur ipsam id galisum quis.</p>
+        </div>
+        </div>
+      </div>
+      <div class="recuerdosInolvidables"> <!--CONTENIDO 4-->
+        <h2 class="recuerdos">Creamos recuerdos inolvidables</h2>
+      </div>
+      <div> <!--CONTENIDO 5-->
+        <h2 class="tituloServicios">Complementa tu evento con nuestros Servicios</h2>
+      </div><br>
+      <div class="botonServ"><a href="Servicios.html"><button type="button" class="btn btn-warning">Da click aquí</button></a></div><br>
+      <div id="carruselIndex">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="tarjetas"> <!--CONTENIDO 3-->
+              <div class="card" style="width: 18rem;">
+                <img src="catering.jpg" class="card-img-top" alt="Catering">
+                <div class="card-body">
+                  <h5 class="card-title">Catering</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Cotizar Servicio</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="mesaDulces.jpg" class="card-img-top" alt="Mesa Dulces">
+                <div class="card-body">
+                  <h5 class="card-title">Mesas de dulces</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Cotizar Servicio</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="mariachi.jpg" class="card-img-top" alt="Mariachis">
+                <div class="card-body">
+                  <h5 class="card-title">Ambientación</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Cotizar Servicio</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="tarjetas"> <!--CONTENIDO 3-->
+              <div class="card" style="width: 18rem;">
+                <img src="catering.jpg" class="card-img-top" alt="Catering">
+                <div class="card-body">
+                  <h5 class="card-title">Catering</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Cotizar Servicio</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="mesaDulces.jpg" class="card-img-top" alt="Mesa Dulces">
+                <div class="card-body">
+                  <h5 class="card-title">Mesas de dulces</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Cotizar Servicio</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="mariachi.jpg" class="card-img-top" alt="Mariachis">
+                <div class="card-body">
+                  <h5 class="card-title">Ambientación</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Cotizar Servicio</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="tarjetas"> <!--CONTENIDO 3-->
+              <div class="card" style="width: 18rem;">
+                <img src="catering.jpg" class="card-img-top" alt="Catering">
+                <div class="card-body">
+                  <h5 class="card-title">Catering</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Cotizar Servicio</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="mesaDulces.jpg" class="card-img-top" alt="Mesa Dulces">
+                <div class="card-body">
+                  <h5 class="card-title">Mesas de dulces</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Cotizar Servicio</a>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img src="mariachi.jpg" class="card-img-top" alt="Mariachis">
+                <div class="card-body">
+                  <h5 class="card-title">Ambientación</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Cotizar Servicio</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      </div>
+
+  </section>
+  <!--<aside></aside>-->
+  <footer>
+    <div>TELEFONOS</div>
+    <div>REDES SOCIALES</div>
+    <div>DIRECCIÓN</div>
+  </footer>
+</body>
+</html>
