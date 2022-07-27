@@ -64,14 +64,19 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: nav;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 2;
 }
 
 /*-------------------------CONTENIDO DE PAGINA---------------------------*/
 #botonWhats {
   position: -webkit-sticky;
   position: sticky;
-  top: 85%;
-  margin-left: 95%;
+  top: 80%;
+  margin-left: 90%;
+  z-index: 1;
 }
 
 #contSeccion {
@@ -133,6 +138,7 @@
   height: auto;
   width: 70%;
   margin-left: 15%;
+  position: static;
 }
 
 .recuerdosInolvidables {
@@ -162,6 +168,10 @@
   margin-top: 80px;
 }
 
+#carruselIndex {
+  position: static;
+}
+
 .tarjetas {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,7 +198,7 @@ footer {
   color: white;
 }
 
-/*------------------->> << PAGINA DE CONTACTO >> <<--------------------*/
+/*------------------->> << PAGINAS >> <<--------------------*/
 .seccionContacto {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -268,6 +278,14 @@ footer {
   margin-bottom: 15px;
 }
 
+.fotosGaleriaMq1 {
+  text-align: center;
+}
+
+.fotosGaleriaMq2 {
+  text-align: center;
+}
+
 .imagenContacto {
   height: 350px;
   width: 55%;
@@ -315,9 +333,70 @@ footer {
       align-content: space-between;
 }
 
+.tarjetasServicios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
 /*------------------->> RESPONSIVIDAD <<--------------------*/
+@media (max-width: 375px) {
+  #carruselIndex {
+    display: none;
+  }
+  .logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    color: white;
+    margin-top: 10%;
+  }
+}
+
 @media (max-width: 412px) {
   #carruselIndex {
+    display: none;
+  }
+  .cuadroTexto {
+    display: none;
+  }
+  .tarjetasMq2 {
+    display: none;
+  }
+}
+
+@media (min-width: 412px) {
+  .cuadroTextoMq {
+    display: none;
+  }
+  .tarjetasMq3 {
+    display: none;
+  }
+}
+
+@media (min-width: 468px) {
+  .fotosGaleriaMq2 {
+    display: none;
+  }
+}
+
+@media (max-width: 468px) {
+  .fotosGaleriaMq1 {
+    display: none;
+  }
+}
+
+@media (max-width: 554px) {
+  .fotosGaleria {
+    display: none;
+  }
+}
+
+@media (min-width: 554px) {
+  .fotosGaleriaMq1 {
     display: none;
   }
 }
@@ -330,6 +409,33 @@ footer {
     margin-top: 80px;
   }
   #carruselIndex {
+    display: none;
+  }
+  .logo {
+    font-family: 'Great Vibes', cursive;
+    font-size: 80px;
+    color: white;
+    margin-top: 10%;
+  }
+  .tarjetasMq {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  #carruselMq {
+    display: none;
+  }
+  .tarjetasMq2 {
+    display: none;
+  }
+}
+
+@media (max-width: 684px) {
+  .imagenContacto {
+    display: none;
+  }
+  .contactanos {
     display: none;
   }
 }
@@ -361,21 +467,24 @@ footer {
   #carruselSalones {
     display: none;
   }
+  #carruselSalonesMq {
+    display: none;
+  }
+  .tarjetasServicios {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .tarjetasMq {
+    display: none;
+  }
 }
 
 @media (max-width: 900px) {
   .imagenContacto {
-    display: none;
-  }
-  .contactanos {
-    display: none;
-  }
-}
-
-@media (max-width: 992px) {
-  .imagenContacto {
     height: 350px;
-    width: 20%;
+    width: 15%;
     border-radius: 15px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.134))), url(wedding1.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
@@ -388,6 +497,30 @@ footer {
     color: white;
     margin-top: 15%;
   }
+  .formCont {
+    display: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .formMq {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  #carruselSalones {
+    display: none;
+  }
+  #carruselSalonesMq {
+    margin-top: 10%;
+  }
+}
+
+@media (min-width: 992px) {
+  #carruselSalonesMq {
+    display: none;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -399,12 +532,6 @@ footer {
     background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
     background-position: center;
     text-align: center;
-  }
-  .contactanos {
-    font-family: 'Great Vibes', cursive;
-    font-size: 80px;
-    color: white;
-    margin-top: 15%;
   }
 }
 /*# sourceMappingURL=style.css.map */

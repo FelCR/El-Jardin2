@@ -51,13 +51,17 @@
 
 #barraNav{
     grid-area: nav;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 }
 
 /*-------------------------CONTENIDO DE PAGINA---------------------------*/
 #botonWhats {
     position: sticky;
-    top: 85%;
-    margin-left: 95%;
+    top: 80%;
+    margin-left: 90%;
+    z-index: 1;
 }
 #contSeccion {
     grid-area: contSeccion;
@@ -102,6 +106,7 @@
     height: auto;
     width: 70%;
     margin-left: 15%;
+    position: static;
     
 }
 .recuerdosInolvidables {
@@ -129,6 +134,10 @@
     margin-top: 80px;
 }
 
+#carruselIndex {
+    position: static;
+}
+
 .tarjetas {
     display: flex;
     justify-content: space-evenly;
@@ -145,7 +154,7 @@ footer {
     background-color: rgb(113, 3, 3);
     color: white;
 }
-/*------------------->> << PAGINA DE CONTACTO >> <<--------------------*/
+/*------------------->> << PAGINAS >> <<--------------------*/
 
 .seccionContacto {
     display: flex;
@@ -201,7 +210,14 @@ footer {
 .fotosGaleria {
     text-align: center;
     margin-bottom: 15px;
+}
 
+.fotosGaleriaMq1 {
+    text-align: center;
+}
+
+.fotosGaleriaMq2 {
+    text-align: center;
 }
 
 .imagenContacto {
@@ -246,14 +262,75 @@ footer {
     align-content: space-between;
 }
 
+.tarjetasServicios {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
 
 /*------------------->> RESPONSIVIDAD <<--------------------*/
+@media (max-width: 375px) {
+    #carruselIndex {
+        display: none;
+    }
+    .logo {
+        font-family: 'Great Vibes', cursive;
+        font-size: 60px;
+        color: white;
+        margin-top: 10%;
+    }
+    
+}
+
 @media (max-width: 412px) {
     #carruselIndex {
         display: none;
     }
-    
+    .cuadroTexto {
+        display: none;
+    }
+
+    .tarjetasMq2 {
+        display: none;
+    }
 }
+
+@media (min-width: 412px) {
+    .cuadroTextoMq {
+        display: none;
+    }
+
+    .tarjetasMq3 {
+        display: none;
+    }
+}
+
+@media (min-width: 468px) {
+    .fotosGaleriaMq2 {
+        display: none;
+    }
+}
+
+@media (max-width: 468px) {
+    .fotosGaleriaMq1 {
+        display: none;
+    }
+}
+
+@media (max-width: 554px) {
+    .fotosGaleria {
+        display: none;
+    }
+}
+
+@media (min-width: 554px) {
+    .fotosGaleriaMq1 {
+        display: none;
+    }
+}
+
+
 @media (max-width: 576px) {
     .recuerdos {
         font-family: 'Great Vibes', cursive;
@@ -265,7 +342,39 @@ footer {
     #carruselIndex {
         display: none;
     }
+
+    .logo {
+        font-family: 'Great Vibes', cursive;
+        font-size: 80px;
+        color: white;
+        margin-top: 10%;
+    }
+
+    .tarjetasMq {
+        display: none;
+    }
+    
 }
+
+@media (min-width: 576px) {
+    #carruselMq {
+        display: none;
+    }
+    .tarjetasMq2 {
+        display: none;
+    }
+}
+
+@media (max-width: 684px) {
+    .imagenContacto {
+        display: none;
+    }
+    
+    .contactanos {
+        display: none;
+    }
+}
+
     
 @media (max-width: 768px) {
     #gridJardin {
@@ -293,27 +402,29 @@ footer {
         margin-top: 85px; 
     }
 
-    
-
     #carruselSalones {
         display: none;
     }
+    #carruselSalonesMq {
+        display: none;
+    }
 
-}
-@media (max-width: 900px) {
-    .imagenContacto {
+    .tarjetasServicios {
         display: none;
     }
     
-    .contactanos {
+}
+
+@media (min-width: 768px) {
+    .tarjetasMq {
         display: none;
     }
-
 }
-@media (max-width: 992px) {
+
+@media (max-width: 900px) {
     .imagenContacto {
         height: 350px;
-        width: 20%;
+        width: 15%;
         border-radius: 15px;
         background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
         background-position: center;
@@ -325,7 +436,35 @@ footer {
         font-size: 70px;
         color: white;
         margin-top: 15%;
+
+    }
+
+    .formCont {
+        display: none;
+    }
+
+}
+
+@media (min-width: 900px) {
+    .formMq {
+        display: none;
+    }
+}
+
+
+@media (max-width: 992px) {
     
+    #carruselSalones {
+        display: none;
+    }
+    #carruselSalonesMq {
+        margin-top: 10%;
+    }
+}
+
+@media (min-width: 992px) {
+    #carruselSalonesMq {
+        display: none;
     }
 }
 @media (max-width: 1200px) {
@@ -338,14 +477,7 @@ footer {
         text-align: center;
     }
     
-    .contactanos {
-        font-family: 'Great Vibes', cursive;
-        font-size: 80px;
-        color: white;
-        margin-top: 15%;
-    
-    }
 }
 @media (max-width: 1400px) {
-    
+
 }
