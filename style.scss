@@ -353,6 +353,17 @@ footer {
     .tarjetasMq {
         display: none;
     }
+
+    #botonWhats {
+        display: none;
+    }
+
+    #botonWhatsMq {
+        position: sticky;
+        top: 80%;
+        margin-left: 85%;
+        z-index: 1;
+    }
     
 }
 
@@ -361,6 +372,10 @@ footer {
         display: none;
     }
     .tarjetasMq2 {
+        display: none;
+    }
+
+    #botonWhatsMq {
         display: none;
     }
 }
