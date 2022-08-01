@@ -381,10 +381,16 @@ footer {
   .fotosGaleriaMq2 {
     display: none;
   }
+  .mapaMq {
+    display: none;
+  }
 }
 
 @media (max-width: 468px) {
   .fotosGaleriaMq1 {
+    display: none;
+  }
+  .mapaMq2 {
     display: none;
   }
 }
@@ -393,11 +399,35 @@ footer {
   .fotosGaleria {
     display: none;
   }
+  .mapa {
+    display: none;
+  }
+  .contactanosMq {
+    display: none;
+  }
 }
 
 @media (min-width: 554px) {
   .fotosGaleriaMq1 {
     display: none;
+  }
+  .mapaMq {
+    display: none;
+  }
+  .imagenContactoMq {
+    height: 350px;
+    width: 250px;
+    border-radius: 15px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.134))), url(wedding1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
+    background-position: center;
+    text-align: center;
+  }
+  .contactanosMq {
+    font-family: 'Great Vibes', cursive;
+    font-size: 60px;
+    color: white;
+    margin-top: 15%;
   }
 }
 
@@ -449,6 +479,18 @@ footer {
     display: none;
   }
   .contactanos {
+    display: none;
+  }
+}
+
+@media (min-width: 684px) {
+  .mapaMq2 {
+    display: none;
+  }
+  .imagenContactoMq {
+    display: none;
+  }
+  .contactanosMq {
     display: none;
   }
 }
