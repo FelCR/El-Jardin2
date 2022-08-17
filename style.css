@@ -9,7 +9,10 @@
   -webkit-column-gap: 0;
           column-gap: 0;
   row-gap: 0;
-      grid-template-areas: "encabezado encabezado encabezado" "nav nav nav" "contSeccion contSeccion contSeccion" "footer footer footer";
+      grid-template-areas: "encabezado encabezado encabezado"
+ "nav nav nav"
+ "contSeccion contSeccion contSeccion"
+ "footer footer footer";
 }
 
 .textoBoton {
@@ -31,8 +34,8 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: encabezado;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.278))), url(flores.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(flores.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.278))), url(imagen/flores.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(imagen/flores.jpg);
   background-size: cover;
   background-blend-mode: darken;
   background-attachment: fixed;
@@ -144,8 +147,8 @@
 .recuerdosInolvidables {
   height: 400px;
   width: 90%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.278))), url(formulario.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(formulario.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.278))), url(imagen/formulario.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(imagen/formulario.jpg);
   background-size: cover;
   background-blend-mode: darken;
   background-attachment: fixed;
@@ -290,8 +293,8 @@ footer {
   height: 350px;
   width: 55%;
   border-radius: 15px;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.134))), url(wedding1.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.134))), url(imagen/wedding1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(imagen/wedding1.jpg);
   background-position: center;
   text-align: center;
 }
@@ -304,8 +307,8 @@ footer {
 }
 
 #encabezadoContacto {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.278))), url(wedding1.jpg);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(wedding1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.278))), url(imagen/wedding1.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(imagen/wedding1.jpg);
   background-size: cover;
   background-blend-mode: darken;
   background-attachment: fixed;
@@ -418,8 +421,8 @@ footer {
     height: 350px;
     width: 250px;
     border-radius: 15px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.134))), url(wedding1.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.134))), url(imagen/wedding1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(imagen/wedding1.jpg);
     background-position: center;
     text-align: center;
   }
@@ -506,7 +509,10 @@ footer {
     -webkit-column-gap: 0;
             column-gap: 0;
     row-gap: 0;
-        grid-template-areas: "encabezado encabezado encabezado" "nav nav nav" "contSeccion contSeccion contSeccion" "footer footer footer";
+        grid-template-areas: "encabezado encabezado encabezado"
+ "nav nav nav"
+ "contSeccion contSeccion contSeccion"
+ "footer footer footer";
   }
   .tituloContenido {
     font-family: 'Times New Roman', Times, serif;
@@ -541,8 +547,8 @@ footer {
     height: 350px;
     width: 15%;
     border-radius: 15px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.134))), url(wedding1.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.134))), url(imagen/wedding1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(imagen/wedding1.jpg);
     background-position: center;
     text-align: center;
   }
@@ -583,8 +589,8 @@ footer {
     height: 350px;
     width: 40%;
     border-radius: 15px;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.134))), url(wedding1.jpg);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
+   /* background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.134))), url(imagen/wedding1.jpg);*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(imagen/wedding1.jpg);
     background-position: center;
     text-align: center;
   }

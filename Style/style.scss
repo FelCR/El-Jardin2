@@ -26,7 +26,7 @@
 /*---------------------- ENCABEZADO DEL SITIO-------------------------*/
 #encabezado { 
     grid-area: encabezado;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(flores.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(imagen/flores.jpg);
     background-size: cover;
     background-blend-mode: darken;
     background-attachment: fixed;
@@ -112,7 +112,7 @@
 .recuerdosInolvidables {
     height: 400px;
     width: 90%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(formulario.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(imagen/formulario.jpg);
     background-size: cover;
     background-blend-mode: darken;
     background-attachment: fixed;
@@ -224,7 +224,7 @@ footer {
     height: 350px;
     width: 55%;
     border-radius: 15px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(imagen/wedding1.jpg);
     background-position: center;
     text-align: center;
 }
@@ -238,7 +238,7 @@ footer {
 }
 
 #encabezadoContacto { 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(wedding1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.278)), url(imagen/wedding1.jpg);
     background-size: cover;
     background-blend-mode: darken;
     background-attachment: fixed;
@@ -456,7 +456,7 @@ $social-brand-tumblr: #32506d;
         height: 350px;
         width: 250px;
         border-radius: 15px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(imagen/wedding1.jpg);
         background-position: center;
         text-align: center;
 }
@@ -596,7 +596,7 @@ $social-brand-tumblr: #32506d;
         height: 350px;
         width: 15%;
         border-radius: 15px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(imagen/wedding1.jpg);
         background-position: center;
         text-align: center;
     }
@@ -642,7 +642,7 @@ $social-brand-tumblr: #32506d;
         height: 350px;
         width: 40%;
         border-radius: 15px;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(wedding1.jpg);
+        background-image: linear-gradient(rgba(0, 0, 0, 0.134)), url(imagen/wedding1.jpg);
         background-position: center;
         text-align: center;
     }
